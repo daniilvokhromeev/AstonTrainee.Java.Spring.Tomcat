@@ -13,7 +13,7 @@ public class TomcatController {
     @GetMapping("/hello")
     public Collection<String> sayHello() {
         return IntStream.range(0, 10)
-                .mapToObj(i -> "Jenkins работай пожалуйста!!!!!!!!!!!!!!!!!!" + i)
+                .mapToObj(i -> "Jenkins работай цwebhook test!" + i)
                 .collect(Collectors.toList());
     }
 }
