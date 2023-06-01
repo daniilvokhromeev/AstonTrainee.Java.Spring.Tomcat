@@ -13,7 +13,7 @@ public class TomcatController {
     @GetMapping("/hello")
     public Collection<String> sayHello() {
         return IntStream.range(0, 10)
-                .mapToObj(i -> "Hello number for test commit " + i)
+                .mapToObj(i -> "Foooo its works " + i)
                 .collect(Collectors.toList());
     }
 }
